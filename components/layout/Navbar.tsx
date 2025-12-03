@@ -15,7 +15,6 @@ const Navbar: React.FC = () => {
 
           <div
             className="
-              relative
               min-w-[77px]
               w-[77px]
               group-hover:w-48

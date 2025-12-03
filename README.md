@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎓 SFU – Sistema Financeiro do Universitário
 
-## Getting Started
+Este repositório contém o projeto **SFU (Sistema Financeiro do Universitário)**, desenvolvido como parte da disciplina **Estágio I** da faculdade.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📌 O que é o projeto?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O **SFU** é uma plataforma voltada para a **gestão financeira de estudantes universitários**. Seu objetivo principal é fornecer uma solução centralizada para o controle e organização das finanças pessoais dos alunos.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧠 Funcionalidades previstas
 
-## Learn More
+- ✅ Gestão pessoal das finanças do estudante  
+- ✅ Controle de pagamentos:
+  - PIX
+  - Boletos
+  - Cartão de crédito/débito
+- ✅ Conciliação bancária e de transações
+- ✅ Gestão de bolsas e benefícios estudantis
+- ✅ Geração de relatórios financeiros
+- ✅ Integração com sistemas:
+  - **SIS (Sistema de Informação do Estudante)**
+  - **ERP Acadêmico**
+  - **Plataformas de BI (Business Intelligence)**
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Estrutura deste repositório
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Pasta/Arquivo              | Descrição |
+|---------------------------|-----------|
+| `script_banco.sql`        | Script de criação do banco de dados normalizado em 3FN |
+| `modelagem_ER.png`        | Imagem do diagrama entidade-relacionamento do sistema |
+| `README.md`               | Este arquivo de apresentação |
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧱 Componentes da Arquitetura
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 📂 Banco de Dados relacional (modelado em 3FN)
+- 🗂️ Diagrama textual e modelo lógico de dados
+
+---
+
+## 🎓 Disciplina
+
+**Estágio I – Curso de Sistemas da Informação**  
+**Centro Universitário de Desenvolvimento do Centro-Oeste**  
+**Professor(a): William Ribeiro**  
+
+---
+
+## 📄 Licença
+
+Este projeto é acadêmico e não possui fins comerciais. Sinta-se à vontade para estudar, adaptar e evoluir a solução.
+
