@@ -37,7 +37,7 @@ export default function RootLayout({
 
           <div className="w-full">
             <Header />
-            {children}
+            <div className="min-h-[75vh]">{children}</div>
             <Footer />
           </div>
         </div>

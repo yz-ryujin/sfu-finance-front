@@ -10,30 +10,64 @@ const Navbar: React.FC = () => {
   return (
     <>
       <div className="md:block hidden">
-        <div className="bg-gray-200 py-6.5 flex justify-center text-blue-800 ">
-          <Icon icon="material-symbols:menu-rounded" width={24} height={24} />
-        </div>
-        <div
-          className={`min-w-[77px] transition-all duration-500 ease h-full bg-blue-800 px-3.5 container-lg2 scrollbarStyle sticky top-5 z-10`}>
-        
-          <div className="relative">
-            <div className="relative w-full pb-6  z-20 text-center">
-              {/* <ModeToggle /> */}
+
+        <div className="group">
+
+          <div
+            className="
+              relative
+              min-w-[77px]
+              w-[77px]
+              group-hover:w-48
+              transition-all duration-300 ease-in-out
+              h-[100vh] bg-blue-800 px-3.5
+              overflow-hidden
+              sticky
+            "
+          >
+            <div className="flex flex-col justify-between gap-6 mt-19">
+              {menuNavBar.map((item, i) => (
+                <Link key={i} href={item.href}>
+                  <div
+                    className={`menu
+                      ${
+                        activeIndex === i
+                          ? "bg-white text-blue-800"
+                          : "text-rc_slate hover:text-blue-800 hover:bg-white"
+                      }
+                    `}
+                    onClick={() => setActiveIndex(i)}
+                  >
+                    <Icon icon={item.icon} width={24} height={24} />
+
+                    <span
+                      className="
+                        opacity-0 
+                        group-hover:opacity-100 
+                        transition-opacity duration-200
+                        whitespace-nowrap
+                      "
+                    >
+                      {item.title}
+                    </span>
+                  </div>
+                </Link>
+              ))}
             </div>
-            <div className="overflow-y-auto overflow-x-hidden flex flex-col items-center gap-6 h-[calc(100vh-9rem)]">
-                {menuNavBar.map((item, i) => (
-                  <Link key={i} href={item.href}>
-                        <div className={`menu ${
-                            activeIndex === i
-                              ? "bg-white text-blue-800"
-                              : "text-rc_slate hover:text-blue-800 hover:bg-white"
-                          }`}
-                          onClick={() => setActiveIndex(i)}>
-                          <Icon icon={item.icon} width={24} height={24} />
-                        </div>
-                  </Link>
-                ))}
+
+            <div
+              className="
+                absolute bottom-0 left-0
+                w-full
+                h-24
+                bg-white
+                shadow-lg
+                flex items-center justify-center
+              "
+            >
+              <span className="text-blue-800 font-semibold">INFO</span>
             </div>
+
           </div>
         </div>
       </div>

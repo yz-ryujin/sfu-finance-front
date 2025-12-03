@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="w-full flex items-center justify-between px-5 py-3 md:px-12 md:py-3.5 bg-white shadow-md">
+    <header className="w-full flex items-center justify-between px-5 py-3 md:px-12 md:py-3.5 bg-white shadow-md z-20">
       <div className="">
         <Link href="#">
           <Image
