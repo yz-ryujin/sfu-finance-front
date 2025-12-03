@@ -29,3 +29,26 @@ body {
 .menu {
     @apply text-center flex items-center gap-3 p-3 rounded-md transition-all ;
   }
+
+
+  @layer utilities {
+  .animate-left-right {
+    animation: leftRight 4s ease-in-out infinite;
+  }
+
+  .animate-right-left {
+    animation: rightLeft 4s ease-in-out infinite;
+  }
+
+  @keyframes leftRight {
+    0% { transform: translateX(0) rotate(-12deg) skew(-12deg); }
+    50% { transform: translateX(1000px) rotate(-12deg) skew(-12deg); }
+    100% { transform: translateX(0) rotate(-12deg) skew(-12deg); }
+  }
+
+  @keyframes rightLeft {
+    0% { transform: translateX(0) rotate(-12deg) skew(-12deg); }
+    50% { transform: translateX(-1000px) rotate(-12deg) skew(-12deg); }
+    100% { transform: translateX(0) rotate(-12deg) skew(-12deg); }
+  }
+}

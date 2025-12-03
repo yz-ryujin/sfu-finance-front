@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
           >
             <div className="flex flex-col justify-between gap-6 mt-19">
               {menuNavBar.map((item, i) => (
-                <Link key={i} href={item.href}>
+                <Link key={i} href={`${item.href}`}>
                   <div
                     className={`menu
                       ${

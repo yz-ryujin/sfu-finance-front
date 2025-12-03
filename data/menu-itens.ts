@@ -1,9 +1,10 @@
 export const menuNavBar = [
-    { href: "#home", alt: "Página Inicial", icon: "ion:home", title: "Home" },
-    { href: "#services", alt: "Serviços", icon: "ion:book", title: "Services" },
-    { href: "#experience", alt: "Experiência", icon: "fa:briefcase", title: "Experience" },
-    { href: "#projects", alt: "Projetos", icon: "heroicons:document-text-solid", title: "Projects" },
-    { href: "#blogs", alt: "Blogs", icon: "ri:quill-pen-ai-fill", title: "Blogs" },
-    { href: "#reviews", alt: "Avaliações", icon: "tabler:message-2-filled", title: "Reviews" },
-    { href: "#contact", alt: "Contato", icon: "streamline:mail-send-email-message-solid", title: "Contact" },
-  ];
+  { href: "/dashboard", alt: "Dashboard", icon: "ion:home", title: "Dashboard" },
+  { href: "/dashboard/faturas", alt: "Faturas", icon: "heroicons:document-text-solid", title: "Faturas" },
+  { href: "/dashboard/pagamentos", alt: "Pagamentos", icon: "mdi:credit-card-check-outline", title: "Pagamentos" },
+  { href: "/dashboard/clientes", alt: "Clientes", icon: "ion:person", title: "Clientes" },
+  { href: "/dashboard/fornecedores", alt: "Fornecedores", icon: "mdi:storefront-outline", title: "Fornecedores" },
+  { href: "/dashboard/relatorios", alt: "Relatórios", icon: "mdi:chart-box-outline", title: "Relatórios" },
+  { href: "/dashboard/integracoes", alt: "Integrações", icon: "mdi:api", title: "Integrações" },
+  { href: "/dashboard/configuracoes", alt: "Configurações", icon: "ion:settings-sharp", title: "Configurações" },
+];
